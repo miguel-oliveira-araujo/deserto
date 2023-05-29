@@ -1,7 +1,9 @@
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
+ctx.canvas.width=window.innerWidth;
+    ctx.canvas.height=window.innerHeight;
     ctx.fillStyle ='#9e9b70';
-    ctx.fillRect(1,500,2000,300);
+    ctx.fillRect(1,500,3000,400);
 
     
     ctx.fillStyle='yellow';
@@ -9,9 +11,9 @@ const ctx = canvas.getContext('2d');
     ctx.arc(750,200,80,0,Math.PI*2)
     ctx.fill();
 
-    ctx.fillStyle='#944913';
+    ctx.fillStyle='black';
     ctx.beginPath();
-    ctx.arc(750,200,80,0,Math.PI*1)
+    ctx.arc(750,200,80,0,Math.PI*1,5, Math.PI*1,false)
     ctx.fill();
 
 
@@ -309,7 +311,7 @@ const ctx = canvas.getContext('2d');
 
     var imagem = new Image();
 imagem.onload=function(){
-ctx.drawImage(this, 10, 350, 200, 200);}
+ctx.drawImage(this, 1000, 150, 1000, 500);}
 imagem.src = 'img/cacto.png';
 
     var imagem = new Image();
