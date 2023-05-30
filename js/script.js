@@ -13,7 +13,7 @@ ctx.canvas.width=window.innerWidth;
 
     ctx.fillStyle='black';
     ctx.beginPath();
-    ctx.arc(750,200,80,0,Math.PI*1,5, Math.PI*1,false)
+    ctx.arc(750,200,80,Math.PI*1,5, Math.PI*0.5,true)
     ctx.fill();
 
 
@@ -311,13 +311,13 @@ ctx.canvas.width=window.innerWidth;
 
     var imagem = new Image();
 imagem.onload=function(){
-ctx.drawImage(this, 1000, 150, 1000, 500);}
-imagem.src = 'img/cacto.png';
+ctx.drawImage(this, 500, 150, 1000, 500);}
+imagem.src = 'img/cacto.png.png';//cacto
 
     var imagem = new Image();
 imagem.onload=function(){
 ctx.drawImage(this, 400, 320, 200, 200);}
-imagem.src = 'img/cacto2.png';
+imagem.src = 'img/cacto2.png.';
 
 var imagem = new Image();
 imagem.onload=function(){
