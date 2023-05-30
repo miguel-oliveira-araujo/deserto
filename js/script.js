@@ -1,7 +1,6 @@
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
-ctx.canvas.width=window.innerWidth;
-    ctx.canvas.height=window.innerHeight;
+
     ctx.fillStyle ='#9e9b70';
     ctx.fillRect(1,500,3000,400);
 
@@ -13,7 +12,7 @@ ctx.canvas.width=window.innerWidth;
 
     ctx.fillStyle='black';
     ctx.beginPath();
-    ctx.arc(750,200,80,Math.PI*1,5, Math.PI*0.5,true)
+    ctx.arc(750,200,80,Math.PI*1.5, Math.PI*0.5,true)
     ctx.fill();
 
 
@@ -311,36 +310,55 @@ ctx.canvas.width=window.innerWidth;
 
     var imagem = new Image();
 imagem.onload=function(){
-ctx.drawImage(this, 500, 150, 1000, 500);}
-imagem.src = 'img/cacto.png.png';//cacto
-
-    var imagem = new Image();
-imagem.onload=function(){
-ctx.drawImage(this, 400, 320, 200, 200);}
-imagem.src = 'img/cacto2.png.';
+ctx.drawImage(this, 1000, 350, 200, 200);}
+imagem.src = 'img/cacto.png';//cacto
 
 var imagem = new Image();
 imagem.onload=function(){
-ctx.drawImage(this, 900, 320, 200, 200);}
-imagem.src = 'img/cacto3.png';
+ctx.drawImage(this, 400, 370, 200, 200);}
+imagem.src = 'img/cacto.png';//cacto
 
-ctx.strokeStyle='black';//cacto
-ctx.lineWidth='30';
-ctx.beginPath();
-ctx.moveTo(1200,530);
-ctx.lineTo(1200,300);
-ctx.stroke();
+ctx.fillStyle ='#434445';
+ctx.fillRect(750,360,80,50);//cabeça
 
-ctx.strokeStyle='black';//cacto
-ctx.lineWidth='30';
-ctx.beginPath();
-ctx.moveTo(1250,400);
-ctx.lineTo(1150,400);
-ctx.stroke();
+ctx.fillStyle ='black';
+ctx.fillRect(760,370,10,10);//olho
 
-ctx.strokeStyle='black';//cacto
-ctx.lineWidth='30';
-ctx.beginPath();
-ctx.moveTo(1250,350);
-ctx.lineTo(1250,415);
-ctx.stroke();
+ctx.strokeStyle='#434445';//boca
+    ctx.lineWidth='8';
+    ctx.beginPath();
+    ctx.moveTo(820,420);
+    ctx.lineTo(760,420);
+    ctx.stroke();
+
+    ctx.strokeStyle='#434445';//braço
+    ctx.lineWidth='8';
+    ctx.beginPath();
+    ctx.moveTo(820,440);
+    ctx.lineTo(760,440);
+    ctx.stroke();
+
+    ctx.strokeStyle='#434445';//mão
+    ctx.lineWidth='8';
+    ctx.beginPath();
+    ctx.moveTo(820,436);
+    ctx.lineTo(820,450);
+    ctx.stroke();
+
+ctx.fillStyle ='#434445';
+ctx.fillRect(750,410,50,70);// corpo
+
+ctx.fillStyle ='#434445';
+ctx.fillRect(730,410,50,70);
+
+ctx.fillStyle ='#434445';
+ctx.fillRect(740,430,10,70);
+
+ctx.fillStyle ='#434445';
+ctx.fillRect(760,430,10,70);
+
+ctx.fillStyle ='#434445';
+ctx.fillRect(710,435,50,40);//rabo
+
+ctx.fillStyle ='#434445';
+ctx.fillRect(680,445,50,30);
