@@ -1,6 +1,12 @@
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
+<<<<<<< HEAD
 
+=======
+ctx.canvas.width=window.innerWidth;
+ctx.canvas.height=window.innerHeight;
+    ctx.canvas.height=window.innerHeight;
+>>>>>>> 992e94428463fc0b11e38ad283a3f58d003c03b7
     ctx.fillStyle ='#9e9b70';
     ctx.fillRect(1,500,3000,400);
 
