@@ -6,17 +6,40 @@ const ctx = canvas.getContext('2d');
     ctx.fillStyle ='#9e9b70';
     ctx.fillRect(1,400,4000,900);
 
-    
-    ctx.fillStyle='grey';
+    //Lua
+    ctx.fillStyle='#A9A9A9';
     ctx.beginPath();
     ctx.arc(1100,90,60,0,Math.PI*2)
     ctx.fill();
-
-    ctx.fillStyle='black';
+	
+	//Crateras
+	ctx.fillStyle='#808080';
     ctx.beginPath();
-    ctx.arc(1100,90,60,Math.PI*1.5, Math.PI*0.5,true)
+    ctx.arc(1140,70,8,0,Math.PI*2)
     ctx.fill();
-
+	
+	ctx.fillStyle='#808080';
+    ctx.arc(1120,120,12,0,Math.PI*2)
+    ctx.fill();
+	
+	ctx.fillStyle='#808080';
+	ctx.beginPath();
+    ctx.arc(1070,110,20,0,Math.PI*2)
+    ctx.fill();
+	
+	ctx.fillStyle='#808080';
+    ctx.arc(1115,80,5,0,Math.PI*2)
+    ctx.fill();
+	
+	ctx.fillStyle='#808080';
+	ctx.beginPath();
+    ctx.arc(1075,60,13,0,Math.PI*2)
+    ctx.fill();
+	
+	ctx.fillStyle='#808080';
+    ctx.arc(1115,45,10,0,Math.PI*2)
+    ctx.fill();
+	//Fim lua
 
     ctx.strokeStyle='black';
     ctx.lineWidth='5';
@@ -249,6 +272,8 @@ imagem.onload=function(){
 ctx.drawImage(this, 400, 250, 200, 200);}
 imagem.src = 'img/cacto.png';//cacto
 
+//Montando o dinossauro
+
 ctx.fillStyle ='#434445';
 ctx.fillRect(750,260,80,50);//cabeça
 
@@ -257,21 +282,18 @@ ctx.fillRect(760,270,10,10);//olho
 
 ctx.strokeStyle='#434445';//boca
     ctx.lineWidth='8';
-    ctx.beginPath();
     ctx.moveTo(820,320);
     ctx.lineTo(760,320);
     ctx.stroke();
 
     ctx.strokeStyle='#434445';//braço
     ctx.lineWidth='8';
-    ctx.beginPath();
     ctx.moveTo(820,340);
     ctx.lineTo(760,340);
     ctx.stroke();
 
     ctx.strokeStyle='#434445';//mão
     ctx.lineWidth='8';
-    ctx.beginPath();
     ctx.moveTo(820,336);
     ctx.lineTo(820,350);
     ctx.stroke();
@@ -293,3 +315,137 @@ ctx.fillRect(710,335,50,40);//rabo
 
 ctx.fillStyle ='#434445';
 ctx.fillRect(680,345,50,30);
+
+//Estrelas em pares de codigos
+	ctx.strokeStyle="white";
+    ctx.lineWidth='2';
+    ctx.beginPath();
+    ctx.moveTo(820,40);
+    ctx.lineTo(820,70);
+    ctx.stroke();
+	
+    ctx.moveTo(830,55);
+    ctx.lineTo(810,55);
+    ctx.stroke();
+	
+
+    ctx.lineWidth='2';
+    ctx.beginPath();
+    ctx.moveTo(720,60);
+    ctx.lineTo(720,90);
+    ctx.stroke();
+	
+    ctx.moveTo(730,75);
+    ctx.lineTo(710,75);
+    ctx.stroke();
+	
+    ctx.lineWidth='2';
+    ctx.beginPath();
+    ctx.moveTo(970,60);
+    ctx.lineTo(970,90);
+    ctx.stroke();
+	
+    ctx.moveTo(980,75);
+    ctx.lineTo(960,75);
+    ctx.stroke();
+	
+	ctx.lineWidth='2';
+    ctx.beginPath();
+    ctx.moveTo(1200,20);
+    ctx.lineTo(1200,50);
+    ctx.stroke();
+	
+    ctx.moveTo(1190,35);
+    ctx.lineTo(1210,35);
+    ctx.stroke();
+	
+    ctx.beginPath();
+    ctx.moveTo(1300,90);
+    ctx.lineTo(1300,120);
+    ctx.stroke();
+	
+    ctx.moveTo(1290,105);
+    ctx.lineTo(1310,105);
+    ctx.stroke();
+	
+	ctx.beginPath();
+    ctx.moveTo(600,90);
+    ctx.lineTo(600,120);
+    ctx.stroke();
+	
+    ctx.moveTo(590,105);
+    ctx.lineTo(610,105);
+    ctx.stroke();
+	
+	ctx.beginPath();
+    ctx.moveTo(600,90);
+    ctx.lineTo(600,120);
+    ctx.stroke();
+	
+    ctx.moveTo(590,105);
+    ctx.lineTo(610,105);
+    ctx.stroke();
+	
+	ctx.beginPath();
+    ctx.moveTo(500,30);
+    ctx.lineTo(500,60);
+    ctx.stroke();
+	
+    ctx.moveTo(510,45);
+    ctx.lineTo(490,45);
+    ctx.stroke();
+	
+	ctx.beginPath();
+    ctx.moveTo(350,30);
+    ctx.lineTo(350,60);
+    ctx.stroke();
+	
+    ctx.moveTo(340,45);
+    ctx.lineTo(360,45);
+    ctx.stroke();
+	
+	ctx.beginPath();
+    ctx.moveTo(430,90);
+    ctx.lineTo(430,120);
+    ctx.stroke();
+	
+    ctx.moveTo(440,105);
+    ctx.lineTo(420,105);
+    ctx.stroke();
+	
+	ctx.beginPath();
+    ctx.moveTo(150,5);
+    ctx.lineTo(150,35);
+    ctx.stroke();
+	
+    ctx.moveTo(140,20);
+    ctx.lineTo(160,20);
+    ctx.stroke();
+	
+	ctx.beginPath();
+    ctx.moveTo(250,90);
+    ctx.lineTo(250,120);
+    ctx.stroke();
+	
+    ctx.moveTo(240,105);
+    ctx.lineTo(260,105);
+    ctx.stroke();
+	
+	ctx.beginPath();
+    ctx.moveTo(50,90);
+    ctx.lineTo(50,120);
+    ctx.stroke();
+	
+    ctx.moveTo(40,105);
+    ctx.lineTo(60,105);
+    ctx.stroke();
+	
+	ctx.beginPath();
+    ctx.moveTo(150,235);
+    ctx.lineTo(150,265);
+    ctx.stroke();
+	
+    ctx.moveTo(140,250);
+    ctx.lineTo(160,250);
+    ctx.stroke();
+	
