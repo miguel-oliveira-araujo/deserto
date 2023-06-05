@@ -128,7 +128,7 @@ Para desenhar a lua, utilizamos o seguinte comando:
 
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Utilizamos a cor branca e deixamos a linha mais fina, para simular estrelas de verdade. Depois so repetimos esse mesmo codígo alterando a posicão deles, para colocar outras estrelas no céu.Quando terminamos, so juntamos uma branch com a outra e pronto.<br>
  ## Desenhando o Arbusto
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Para criarmos o arbusto so necessitamos do mesmo comando que usamos para a lua. A diferenca aqui e que agora a circuferencia nao ira se completar, a cor muda e sua posicao tambem. Resolvemos incluir um arbusto pois o lado esquerdo do cenario tava meio vazio e precisavamos  incluir algum arco no cenario. Resolvi tambem adiocionar algumas linhas para decorar o interior do arbusto, simulando galhos.
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Para criarmos o arbusto, só precisamos do mesmo comando que usamos para a lua. A diferença aqui é que agora a circunferência não irá se completar, a cor muda e sua posição também. Resolvemos incluir um arbusto porque o lado esquerdo do cenário estava meio vazio e precisávamos incluir algum arco no cenário. Decidi também adicionar algumas linhas para decorar o interior do arbusto, simulando galhos.
  
  	//Arbusto
 	ctx.fillStyle="green";
