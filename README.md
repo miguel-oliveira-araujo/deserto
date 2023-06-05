@@ -3,7 +3,7 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Olá, estamos aqui para mais um projeto. Dessa vez iremos criar um cenário inspirado em um jogo Offline do Google, o jogo do T-Rex que tem que pular vários cactos e chegar o mais longe possível. É extremamente recomendado que veja o nosso [último trabalho](https://github.com/miguel-oliveira-araujo/Atividade-canvas) sobre o canvas, onde testamos os comandos do canvas (usado nesse projeto) para entender melhor a explicação a seguir.
 
-> <font color="yellow">:warning: Atenção: Todos os códigos do Canvas foram feitos com base na resolução dos sites do Firefox. Portanto, se for abrir o site desse projeto, recomendamos abra-o no Firefox para evitar erros.</font><br>
+> <font color="yellow">:warning: Atenção: Todos os códigos do Canvas foram feitos com base na resolução dos sites do Firefox. Portanto, se for abrir o site desse projeto, recomendamos para que abra-o no Firefox para  evitar provaveis erros.</font><br>
 ## Cenário (Como deve ficar)
 ![image](https://github.com/miguel-oliveira-araujo/deserto/assets/127852225/2e71584c-244a-41be-8322-61992936f231)
 
