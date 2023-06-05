@@ -372,3 +372,68 @@ const ctx = canvas.getContext('2d');
     ctx.moveTo(140,250);
     ctx.lineTo(160,250);
     ctx.stroke();
+	//Arbusto
+	ctx.fillStyle="green";
+	ctx.beginPath();
+    ctx.arc(300,400,60,0,Math.PI*3/2,true)
+    ctx.fill();
+	
+	ctx.arc(250,350,60,0,Math.PI,true)
+    ctx.fill();
+	
+	ctx.arc(200,400,60,0,Math.PI,true)
+    ctx.fill();
+	
+	ctx.strokeStyle="brown";
+    ctx.lineWidth='1';
+    ctx.beginPath();
+    ctx.moveTo(320,380);//Galho direito
+    ctx.lineTo(320,400);
+    ctx.stroke();
+	
+	ctx.moveTo(315,365);
+    ctx.lineTo(320,385);
+    ctx.stroke();
+	
+	ctx.moveTo(325,365);
+    ctx.lineTo(320,385);
+    ctx.stroke();//Fim Galho Direito
+	
+	ctx.moveTo(180,380);//Galho Esquerdo
+    ctx.lineTo(180,400);
+    ctx.stroke();
+	
+	ctx.moveTo(175,365);
+    ctx.lineTo(180,385);
+    ctx.stroke();
+	
+	ctx.moveTo(185,365);
+    ctx.lineTo(180,385);
+    ctx.stroke();//Fim Galho Esquerdo
+	
+	ctx.moveTo(230,330);//Galho Meio-Esquerdo
+    ctx.lineTo(230,400);
+    ctx.stroke();
+	
+	ctx.moveTo(225,315);
+    ctx.lineTo(230,335);
+    ctx.stroke();
+	
+	ctx.moveTo(235,315);
+    ctx.lineTo(230,335);
+    ctx.stroke();//Fim Galho Meio-Esquerdo
+	
+	ctx.moveTo(270,330);//Galho Meio-Direito
+    ctx.lineTo(270,400);
+    ctx.stroke();
+	
+	ctx.moveTo(265,315);
+    ctx.lineTo(270,335);
+    ctx.stroke();
+	
+	ctx.moveTo(275,315);
+    ctx.lineTo(270,335);
+    ctx.stroke();//Fim Galho Meio-Direito
+	
+	
+  
