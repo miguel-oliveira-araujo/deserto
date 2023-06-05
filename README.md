@@ -3,7 +3,9 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Olá, estamos aqui para mais um projeto. Dessa vez iremos criar um cenário inspirado em um jogo Offline do Google, o jogo do T-Rex que tem que pular vários cactos e chegar o mais longe possível. É extremamente recomendado que veja o nosso [último trabalho](https://github.com/miguel-oliveira-araujo/Atividade-canvas) sobre o canvas, onde testamos os comandos do canvas (usado nesse projeto) para entender melhor a explicação a seguir.
 
-> <font color="yellow">:warning: Atenção: Todos os códigos do Canvas foram feitos com base na resolução dos sites do Firefox. Portanto, se for abrir o site desse projeto, abra-o no Firefox para evitar erros.</font>
+> <font color="yellow">:warning: Atenção: Todos os códigos do Canvas foram feitos com base na resolução dos sites do Firefox. Portanto, se for abrir o site desse projeto, recomendamos abra-o no Firefox para evitar erros.</font><br>
+## Cenário (Como deve ficar)
+![image](https://github.com/miguel-oliveira-araujo/deserto/assets/127852225/2e71584c-244a-41be-8322-61992936f231)
 
 ## Fase inicial
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Criamos as pastas para cada arquivo do site. Começamos a pensar no que deveríamos criar e chegamos na ideia do jogo Offline do Google. Ficamos em dúvida se deveríamos fazer o jogo em preto e branco (como no jogo original) ou se deveríamos fazer algo mais colorido. Acabamos decidindo fazer os desenhos coloridos.
@@ -124,4 +126,72 @@ Para desenhar a lua, utilizamos o seguinte comando:
 	ctx.lineTo(810, 55);
 	ctx.stroke();
 
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Utilizamos a cor branca e deixamos a linha mais fina, para simular estrelas de verdade. Depois so repetimos esse mesmo codígo alterando a posicão deles, para colocar outras estrelas no céu.Quando terminamos, so juntamos uma branch com a outra e pronto, o cenario estava feito.
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Utilizamos a cor branca e deixamos a linha mais fina, para simular estrelas de verdade. Depois so repetimos esse mesmo codígo alterando a posicão deles, para colocar outras estrelas no céu.Quando terminamos, so juntamos uma branch com a outra e pronto.<br>
+ ## Desenhando o Arbusto
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Para criarmos o arbusto so necessitamos do mesmo comando que usamos para a lua. A diferenca aqui e que agora a circuferencia nao ira se completar, a cor muda e sua posicao tambem. Resolvemos incluir um arbusto pois o lado esquerdo do cenario tava meio vazio e precisavamos  incluir algum arco no cenario. Resolvi tambem adiocionar algumas linhas para decorar o interior do arbusto, simulando galhos.
+ 
+ 	//Arbusto
+	ctx.fillStyle="green";
+	ctx.beginPath();
+    ctx.arc(300,400,60,0,Math.PI*3/2,true)
+    ctx.fill();
+	
+	ctx.arc(250,350,60,0,Math.PI,true)
+    ctx.fill();
+	
+	ctx.arc(200,400,60,0,Math.PI,true)
+    ctx.fill();
+	
+	ctx.strokeStyle="brown";
+    ctx.lineWidth='1';
+    ctx.beginPath();
+    ctx.moveTo(320,380);//Galho direito
+    ctx.lineTo(320,400);
+    ctx.stroke();
+	
+	ctx.moveTo(315,365);
+    ctx.lineTo(320,385);
+    ctx.stroke();
+	
+	ctx.moveTo(325,365);
+    ctx.lineTo(320,385);
+    ctx.stroke();//Fim Galho Direito
+	
+	ctx.moveTo(180,380);//Galho Esquerdo
+    ctx.lineTo(180,400);
+    ctx.stroke();
+	
+	ctx.moveTo(175,365);
+    ctx.lineTo(180,385);
+    ctx.stroke();
+	
+	ctx.moveTo(185,365);
+    ctx.lineTo(180,385);
+    ctx.stroke();//Fim Galho Esquerdo
+	
+	ctx.moveTo(230,330);//Galho Meio-Esquerdo
+    ctx.lineTo(230,400);
+    ctx.stroke();
+	
+	ctx.moveTo(225,315);
+    ctx.lineTo(230,335);
+    ctx.stroke();
+	
+	ctx.moveTo(235,315);
+    ctx.lineTo(230,335);
+    ctx.stroke();//Fim Galho Meio-Esquerdo
+	
+	ctx.moveTo(270,330);//Galho Meio-Direito
+    ctx.lineTo(270,400);
+    ctx.stroke();
+	
+	ctx.moveTo(265,315);
+    ctx.lineTo(270,335);
+    ctx.stroke();
+	
+	ctx.moveTo(275,315);
+    ctx.lineTo(270,335);
+    ctx.stroke();//Fim Galho Meio-Direito
+	
+	
+  
